@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>QYQB</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>com.qyqb.web.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>boyServlet</servlet-name>
+  	<servlet-class>com.qyqb.web.BoyServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>girlServlet</servlet-name>
+  	<servlet-class>com.qyqb.web.GirlServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>boyDeleteServlet</servlet-name>
+  	<servlet-class>com.qyqb.web.BoyDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>boySaveServlet</servlet-name>
+  	<servlet-class>com.qyqb.web.BoySaveServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>boyDeleteServlet</servlet-name>
+  	<url-pattern>/boyDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>boyServlet</servlet-name>
+  	<url-pattern>/boy</url-pattern>
+  </servlet-mapping>
+    
+  <servlet-mapping>
+  	<servlet-name>girlServlet</servlet-name>
+  	<url-pattern>/girl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  	<servlet-name>boySaveServlet</servlet-name>
+  	<url-pattern>/boySave</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
